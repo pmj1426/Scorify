@@ -143,8 +143,8 @@ export default function Inject({ submission, inject }: props) {
                   ))}
                   <TextField
                     size='small'
-                    label='Submission Notes'
-                    value={submission.notes}
+                    label='Overall Notes'
+                    value={submission.rubric?.notes ?? ""}
                     fullWidth
                   />
                   <Box

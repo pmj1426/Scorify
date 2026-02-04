@@ -50,7 +50,11 @@ export default function Rubric({ elevation = 1, rubric, submission }: props) {
                   <TextField
                     size='small'
                     label='Notes'
-                    value={submission.notes}
+                    value={
+                      submission.rubric?.fields.find(
+                        (submissionField) => submissionField.name === field.name
+                      )?.notes ?? ""
+                    }
                     fullWidth
                   />
                   <TextField
@@ -76,8 +80,8 @@ export default function Rubric({ elevation = 1, rubric, submission }: props) {
               <Divider sx={{ marginBottom: "12px" }} />
               <TextField
                 size='small'
-                label='Notes'
-                value={submission.rubric?.notes}
+                label='Overall Notes'
+                value={submission.rubric?.notes ?? ""}
                 fullWidth
               />
             </>

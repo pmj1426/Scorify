@@ -433,7 +433,7 @@ function GradeSubmissonModal({
               elevation={2}
             >
               <TextField
-                label='Notes'
+                label='Overall Notes'
                 variant='outlined'
                 size='small'
                 value={rubricInput.notes}
