@@ -2,7 +2,8 @@
 checks:
   check_template: github.com/scorify/check-template@v1.0.3
   ping: github.com/scorify/ping@v1.0.2
-  http: github.com/scorify/http@v0.0.6
+  http: github.com/bdawg295/http@v0.0.0
+  httpauth: github.com/ams4222/http@v0.0.1
   ssh: github.com/scorify/ssh@v0.0.1
   dns: github.com/scorify/dns@v0.0.3
   ftp: github.com/scorify/ftp@v0.0.2
@@ -14,3 +15,6 @@ checks:
   smtp: github.com/scorify/smtp@v0.0.0
   imap: github.com/scorify/imap@v0.0.0
   nc: github.com/scorify/nc@v0.0.0
+  telnet: github.com/bdawg295/telnet@v0.0.0
+  mongodb: github.com/jjtech0130/scorify-mongodb@v0.0.4
+  mssql: github.com/pmj1426/mssql2@v0.0.2

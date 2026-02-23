@@ -29,7 +29,7 @@ func workerStatusExchange(conn *amqp.Connection) (*amqp.Channel, error) {
 	err = ch.ExchangeDeclare(
 		WorkerStatusExchange,
 		"fanout",
-		false,
+		true,
 		false,
 		false,
 		false,

@@ -50,7 +50,7 @@ func kothTaskRequestExchange(conn *amqp.Connection) (*amqp.Channel, error) {
 	err = ch.ExchangeDeclare(
 		KothTaskRequestExchange,
 		"topic",
-		false,
+		true,
 		false,
 		false,
 		false,
