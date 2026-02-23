@@ -11,14 +11,12 @@ import {
   Typography,
 } from "@mui/material";
 
-import { useInjectsQuery, useMeQuery, useUsersQuery } from "../../graph";
+import { useInjectsQuery } from "../../graph";
 import { Inject } from "../../components";
 
 export default function Injects() {
   const { data, loading, error, refetch } = useInjectsQuery();
 
-  const { data: meData } = useMeQuery();
-  const { data: userData} = useUsersQuery();
   const navigate = useNavigate();
 
   const urlSearchParams = new URLSearchParams(location.search);
@@ -91,7 +89,6 @@ export default function Injects() {
               <Inject
                 key={inject.id}
                 inject={inject}
-                users={userData?.users.filter((user)=> user.id ===meData.me.id)}
                 visible={inject.title
                   .toLowerCase()
                   .includes(search.toLowerCase())}
