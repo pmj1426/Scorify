@@ -5,6 +5,7 @@ go 1.24.0
 require (
 	entgo.io/ent v0.13.1
 	github.com/99designs/gqlgen v0.17.42
+	github.com/ams4222/adcs v0.0.1
 	github.com/ams4222/http v0.0.1
 	github.com/bdawg295/http v0.0.0
 	github.com/bdawg295/telnet v0.0.0
@@ -48,7 +49,7 @@ require (
 require (
 	ariga.io/atlas v0.19.1-0.20240203083654-5948b60a8e43 // indirect
 	filippo.io/edwards25519 v1.1.0 // indirect
-	github.com/Azure/go-ntlmssp v0.0.0-20221128193559-754e69321358 // indirect
+	github.com/Azure/go-ntlmssp v0.1.0 // indirect
 	github.com/ChrisTrenkamp/goxpath v0.0.0-20210404020558-97928f7e12b6 // indirect
 	github.com/agext/levenshtein v1.2.1 // indirect
 	github.com/agnivade/levenshtein v1.1.1 // indirect

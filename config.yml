@@ -18,3 +18,4 @@ checks:
   telnet: github.com/bdawg295/telnet@v0.0.0
   mongodb: github.com/jjtech0130/scorify-mongodb@v0.0.4
   mssql: github.com/pmj1426/mssql2@v0.0.2
+  adcs: github.com/ams4222/adcs@v0.0.1
