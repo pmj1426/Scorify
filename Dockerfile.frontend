@@ -13,7 +13,7 @@ COPY public /app/public
 
 RUN npm install && npm run build
 
-FROM caddy:2.8.4-alpine
+FROM caddy:2.11.1-alpine
 
 ARG DOMAIN
 ARG PORT
